@@ -1,0 +1,21 @@
+$primary-color: #21216c; /* blue */
+$secondary-color: #2b4da2;
+$tertiary-color: #525252;
+$background-color: #ffffff;
+$border-color: #000000;
+$wrapper-color: #f9f9f9;
+$anchor-color: #5b7a8f;
+$hover-color: #ae91bf;
+$button-hover: #21216cac;
+
+:root {
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+  --tertiary-color: #{$tertiary-color};
+  --background-color: #{$background-color};
+  --border-color: #{$border-color};
+  --wrapper-color: #{$wrapper-color};
+  --anchor-color: #{$anchor-color};
+  --hover-color: #{$hover-color};
+  --button-hover: #{$button-hover};
+}

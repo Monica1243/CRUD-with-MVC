@@ -1,0 +1,22 @@
+.footer {
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.foot-content {
+    margin: 1em;
+    width: 20em;
+    display: flex;
+    font-size: 0.75em;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.copyright {
+    margin: 0.5em;
+    font-size: 0.75em;
+}

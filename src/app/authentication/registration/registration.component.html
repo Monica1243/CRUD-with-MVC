@@ -1,0 +1,61 @@
+<div class="create-account">
+    <h1 class="">Create Account</h1>
+    <form name="reg_form" onsubmit="return validate()">
+        <div class="user-name">
+            <label for="fname"><b>Your Name</b><br>
+                <input type="text" id="fullname" name="fullname" placeholder="First and last name"
+                    pattern="[a-zA-Z]{2,20}" title="Name is required" required>
+            </label><br>
+        </div>
+        <div class="user-mail">
+            <label for="mail"><b>Email</b><br>
+                <input type="text" id="email" name="email" placeholder="Enter your email" pattern="[a-zA-Z]{5,40}"
+                    required>
+            </label><br>
+        </div>
+
+        <div class=" mobile-container">
+            <label for="mobile"><b>Mobile Number</b><br></label>
+            <div class="mobile-container-input">
+                <select id="countryCode">
+                    <option value="+1">+1 (USA)</option>
+                    <option value="+91">+91 (IN)</option>
+                    <option value="+44">+44 (UK)</option>
+                </select>
+                <input type="tel" id="mobileNumber" placeholder="Enter mobile number">
+            </div>
+        </div>
+        <div class="user-password">
+            <label for="password"><b>Password</b><br>
+                <input type="password" id="password" name="password" placeholder="At least 6 characters" required>
+
+            </label>
+        </div>
+        <br>
+        <div class="confirm-password">
+            <label for="verify-password"><b>Re-Enter Password</b><br>
+                <input type="password" id="verify-password" name="verify-password" placeholder="Re-enter Password"
+                    required>
+            </label>
+        </div>
+        <br>
+        <div class="password-alert">
+            Password must be atleat 6 characters.
+        </div>
+        <hr>
+        <div class="mobile-number-disclosure-message">
+            To verify your number, we will send you a text message with a temporary code. Message and data rates
+            may apply.
+        </div>
+        <div class="new-acc">
+            <button type="button" id="verify-button" name="verify" [routerLink]="['/HomePage']" >Verify mobile number</button>
+        </div>
+        <hr>
+        <div class="sign-in">
+            Already have an account? <a href="loginPage" class="anchor-tag">Sign in</a><br><br><br>
+            By creating an account or logging in, you agree to CEI’s<a href="" class="anchor-tag">Conditions of Use</a>
+            and
+            <a href="" class="anchor-tag">Privacy Policy</a>.
+        </div>
+    </form>
+</div>

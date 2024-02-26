@@ -1,0 +1,73 @@
+.create-account input{
+    border-radius: 8px;
+}
+.create-account{
+    border-width: thin;
+    border-style: solid;
+    margin: auto;
+    width: 20%;
+    padding: 2%;
+    position: relative;
+    border-radius: 5px;
+    min-width: 250px;
+    font-size: small;
+    border-color: var(--border-color);
+    margin-bottom:1em;
+}
+.password-alert{
+    font-size: smaller;
+    margin-bottom: 5%; 
+}
+.user-name, .user-mail, .user-number, .user-password{
+    margin-top: 5%;
+}
+
+#verify-button{
+    width: 100%;
+    padding: 2%;
+}
+#fullname, #email, #password, #verify-password{
+    width: 100%;
+    padding: 2%;
+    box-sizing: border-box;
+    border-width: thin;
+    border-style: solid;
+    border-color: var(--border-color);
+    margin-top: 2%;
+    border: 1px solid var(--secondary-color);
+}
+.mobile-container{
+    margin-top: 5%;
+}
+.mobile-container-input {
+    display: flex;
+    margin-top: 2%;
+    justify-content: space-between;
+    
+}
+
+#countryCode {
+    padding: 2%;
+    width: 26%;
+    min-width: 10%;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: x-small;
+    border-width: thin;
+    border-style: solid;
+    border-color: var(--border-color);
+    border: 1px solid var(--secondary-color);
+}
+#mobileNumber {
+    padding: 2%;
+    width: 70%;
+    box-sizing: border-box;
+    border-width: thin;
+    border-style: solid;
+    border-color: var(--border-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.mobile-number-disclosure-message{
+    color: var(--tertiary-grey);
+}

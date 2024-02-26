@@ -1,0 +1,67 @@
+<div *ngIf="isLoginOrReg">
+    <div class="head-content" >
+        <div class="centered">
+            <img src="./../../assets/logo.png" alt="Login icon">
+        </div>
+    </div>
+</div>
+
+<div *ngIf="!isLoginOrReg">
+    <div class="navbar">
+        <div class="navlogo">
+          <div class="logo border">
+            <img src="./../../assets/logo.png" alt="">
+          </div>
+        </div>
+        <div class="navadd border">
+          <p class="addfirst icon">Deliver to</p>
+          <div class="addicon">
+            <i class="fa-solid fa-location-dot icon"></i>
+            <p class="addsecond icon">India</p>
+          </div>
+        </div>
+
+        <div class="nav-search">
+          <select class="search-option1">
+            <option value="All" class="search-option2">All</option>
+          </select>
+          <input type="text" placeholder="Search Spark" class="search-input">
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+
+        </div>
+        <div class="languageoption border">
+          <select name="languages" class="lanoption" id="language-select">
+            <option class="val" value="english">EN</option>
+            <option class="val" value="spanish">ES</option>
+            <option class="val" value="french">FR</option>
+            <option class="val" value="german">DE</option>
+            <option class="val" value="chinese">CN</option>
+          </select>
+        </div>
+        <div class="sign border">
+          <a href="loginPage">
+            <p class="hello">
+              Hello, {{ userName }}
+            </p>
+            <div class="account">
+              Account & Lists
+            </div>
+          </a>
+        </div>
+        <div class="box6 border">
+          <p class="return">
+            Returns
+          </p>
+          <p class="order">
+            & Orders
+          </p>
+        </div>
+        <div class="cart border" (click)="navigate()">
+          <i class="fa-solid fa-cart-shopping"></i>
+          cart
+        </div>
+    </div>
+    <second-header></second-header>
+</div>

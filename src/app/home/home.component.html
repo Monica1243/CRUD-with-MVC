@@ -1,0 +1,18 @@
+<div>
+    <section class="hero-section"></section>
+</div>
+<div>
+    <section class="shop-section">
+        <div *ngFor="let item of products">
+            <div class="product-container">
+                <div>
+                    <input type="checkbox" (change)="addItemToCart(item)">
+                    <label>Add to Cart</label>
+                </div>
+                <div><img src="{{item.imageURL}}" alt=""></div>
+                <div class="prod-name" >{{item.name}}</div>
+                <div>&#8377; {{item.price}}</div>
+            </div>
+        </div>
+    </section>
+</div>

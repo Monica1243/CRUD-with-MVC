@@ -1,0 +1,92 @@
+.container {
+    display: flex;
+  }
+  .cart-container p{
+    font-size: 2em;
+  }
+  .cart-container {
+    flex: 1;
+    padding: 1em;
+  }
+  
+  .cart-item {
+    background-color: #ddd;
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    padding: 2em 0;
+  }
+  
+  .item-image {
+    width: 10em; 
+    height: 8em; 
+    margin-right: 1em;
+  }
+  
+  .item-info {
+    flex: 1;
+  }
+  
+  .item-info h5{
+    left:2em;
+  }
+  
+  .item-info label {
+    margin-right: 1em;
+  }
+  
+  .item-info input {
+    width: 3em
+  }
+  
+  .quantity{
+    margin-top: 1em;
+  }
+
+  .item-info button {
+    margin-left: 1em;
+    background-color: #ff9900; 
+    color: #fff;
+    border: none;
+    padding: 0.5em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .item-info button:hover {
+    background-color: #ff8000; 
+  }
+  
+  .item-pricing {
+    margin-top: 1em;
+    margin-left: auto; 
+    text-align: right; 
+    margin-right: 1em;
+  }
+  
+  .item-pricing h4 {
+    display: inline-block; 
+    margin-right: 1em; 
+  }
+  
+  .item-pricing h4:nth-child(1) {
+    padding: 0.5em;
+    background-color: rgb(190, 130, 199);
+  }
+  
+  .item-checkbox {
+    align-items: center;
+    margin: 0 1em 0 1em;
+  }
+  
+  .subtotal-container {
+    margin: 2em;
+    padding: 1em;
+    margin-right: 2em;
+  }
+  
+  .subtotal {
+    background-color: #ddd;
+    padding: 1em;
+    border: 1px solid #ccc;
+  }
+  

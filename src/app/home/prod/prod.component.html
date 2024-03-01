@@ -1,0 +1,29 @@
+<div class="shop-section">
+    <div *ngFor="let item of products">
+        <div class="product-container">
+            <div *ngIf="!item.cartAdded">
+                <input type="checkbox" (change)="addItemToCart(item)">
+                <label>Add to Cart</label>
+            </div>
+            <div *ngIf="item.cartAdded">
+                <input type="checkbox" checked (change)="removeItemToCart(item)">
+                <label *ngIf="item.cartAdded">Added to Cart</label>
+            </div>                
+            <div><img src="{{item.imageURL}}" alt=""></div>
+            <div class="prod-name" >{{item.name}}</div>
+            <div class="rating">
+                <span class="fa fa-star "></span>
+                <span class="fa fa-star "></span>
+                <span class="fa-regular fa-star"></span>
+                <span class="fa-regular fa-star"></span>
+                <span class="fa-regular fa-star"></span>
+            </div>
+            <!-- Discounted price, real price, and discount percentage -->
+            <div class="pricing-info">
+                <p> &#8377;{{ (item.price - (item.price * (item.discountPercentage / 100))).toFixed(2) }}</p>
+                <p>M.R.P.: <s>&#8377;{{ item.price }}</s></p>
+                <p>({{ item.discountPercentage }}% off )</p>
+            </div>
+        </div>
+    </div>
+</div>

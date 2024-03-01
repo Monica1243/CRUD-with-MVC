@@ -1,0 +1,21 @@
+<div class="window">
+    <p class="error-container">{{ errorMessage }}</p>
+    <div class="password-container">
+        <div class="pass-container">
+            <div class="login-box">
+                <p class="pass"><strong>Verification required</strong></p>
+                <p class="pass-content">To continue, complete this verification step. We've sent an OTP to the mobile number. Please enter it below to complete verification.</p>
+                <form class="signIn-forms" (ngSubmit)="verifyOTP()">
+                    <label class="plac-text form-label" >Enter OTP</label>
+                    <input type="text" class="form-control" placeholder="######" name="userData" required [(ngModel)]="enteredOTP"/>
+                    <button type="submit">Continue</button>
+                </form>
+                <a href="HomePage" class="anchor-tag">Resend OTP</a>
+                <div class="need-help">
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    <a href="" class="anchor-tag">I need more help</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

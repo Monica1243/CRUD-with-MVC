@@ -1,0 +1,61 @@
+.window .container{
+    padding: 0 15% 0 15%;
+    justify-content: center;
+    width: 22em;
+    margin: 0 auto; 
+}
+
+.window .container .login-container {
+    display: flex;
+}
+
+.login-box .sign-in-class{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-box .sign-in-class .social-icons {
+    display: flex;
+}
+
+.login-box .sign-in-class .social-icons i {
+    margin-left: 2em;
+}
+
+.login-box .terms{
+    margin-top: 0.5em;
+    font-size: 0.9em;
+}
+
+.login-box .help{
+    font-size: 0.75rem;
+    text-align: left;
+}
+
+.rotate {
+    -moz-transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    transition: all .1s linear;
+}
+.rotate.down {
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    transform:rotate(90deg);
+}
+
+.login-box .help .content p{
+    margin: 1em;
+}
+
+.login-box .help{
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.login-box .work{
+    margin-top: 2em;
+    text-align: left;
+    width: 100%;
+    font-size: 0.8em;
+}

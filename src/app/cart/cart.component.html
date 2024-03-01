@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="cart-container">
+      <p>Shopping Cart</p>
+      <div *ngFor="let item of cartItems; let i = index" class="cart-item">
+        <input type="checkbox" class="item-checkbox" [checked]="item.selected" (change)="toggleSelected(item)">
+        <img [src]="item.imageURL" alt="Item Image" class="item-image">
+        <div class="item-info">
+          <h1>{{ item.name }}</h1>
+          <h5>{{ item.description }}</h5>
+          <h6 *ngIf="item.available" style="color: green;">In Stock</h6>
+          <h6 *ngIf="!item.available" style="color: red;">Out of Stock</h6>
+          <div class="quantity">
+            <label>Quantity:</label>
+            <input type="number" [(ngModel)]="item.quantity">
+            <button (click)="removeItem(i)">Remove</button>
+          </div>
+        </div>
+        <div class="item-pricing">
+          <h4>{{ item.discountPercentage }}%</h4>
+          <h4>&#8377;{{ (item.price - (item.price * (item.discountPercentage / 100))).toFixed(2) }}</h4>
+          <h3>M.R.P.: <s>&#8377;{{ item.price }}</s></h3>
+        </div>
+      </div>
+    </div>
+    <div class="subtotal-container">
+      <div class="subtotal new-acc">
+        <h3>Subtotal: &#8377;{{ calculateSubtotal() }}</h3>
+        <button class="">Proceed to Buy</button>
+      </div>
+    </div>
+  </div>
+  

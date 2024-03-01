@@ -1,0 +1,135 @@
+/* You can add global styles to this file, and also import other style files */
+@import './colors.scss';
+
+*{
+    margin: 0;
+}
+
+.window {
+    background-color: var(--background-color);
+    min-height: 500px;
+    min-width: 450px;
+}
+
+.window .error-container{
+    text-align: center;
+    color: red;
+    margin: 1em;
+}
+
+.login-box {
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color); 
+    border-radius: 5px;
+    text-align: center;
+    padding: 1.5em;
+    margin:0 auto;
+}
+
+.login-box .signIn-forms{
+    margin: 1em 0 1em 0;
+    text-align: left;
+}
+
+.login-box .signIn-forms .plac-text{
+    margin-bottom:0.5em;
+}
+
+.login-box input {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    border: 1px solid var(--secondary-color);
+    border-radius: 3px;
+    margin-bottom: 1em;
+    padding: 0.75em;
+}
+
+.login-box button {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    color: var(--background-color);
+    cursor: pointer;
+}
+
+.login-box button:hover{
+    background-color: var(--button-hover);
+}
+
+button:hover{
+    background-color: var(--button-hover);
+}
+
+.anchor-tag{
+    color: var(--anchor-color);
+    text-decoration: none;
+}
+
+.anchor-tag:hover{
+    cursor: pointer;
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+
+.border {
+    padding: auto;
+    border: 2px solid transparent;
+    border-radius: 2px;
+  }
+  
+  .border:hover {
+    border: 1.5px solid white;
+  }
+
+  div .custom {
+    margin-top: 1em;
+    justify-content: center;
+    width: 100%;
+}
+.c1{
+    width: 100%;
+    font-size: 0.75rem;
+    color: var(--tertiary-color);
+    margin-bottom: 2em;
+}
+.wrapper {
+    margin-top: 1.5em;
+    display: flex;
+    align-items: center;
+    color: var(--tertiary-color);
+    font-size: 0.75em;
+}
+
+.line {
+    flex: 1;
+    border-bottom: 1px solid var(--tertiary-color);
+}
+
+.content1 {
+    padding: 0 10px; /* Adjust padding as needed */
+}
+
+.new-acc button{
+    margin-top: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: var(--primary-color);
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 5px;
+    color: var(--background-color);
+    cursor: pointer;
+}
+
+.new-acc button:hover{
+    background-color: var(--button-hover);
+}
+
+  
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
